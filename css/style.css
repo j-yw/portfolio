@@ -4,15 +4,79 @@ body {
   box-sizing: border-box;
 }
 
-main {
-  width: 600px;
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+header {
+  width: fit-content;
+  padding: 12px 0;
   margin-left: auto;
   margin-right: auto;
 }
 
+main {
+  max-width: 600px;
+  padding: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main h3 {
+  line-height: 1.4;
+}
+
 .card {
-  width: 380px;
+  width: 480px;
   border: 1px solid black;
-  margin: 24px;
-  padding: -24px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.card img {
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img {
+  width: fit-content;
+  position: relative;
+  padding: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h3 {
+  text-align: center;
+  padding-bottom: 12px;
+}
+
+.projects {
+  padding: 32px 16px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid red;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
 }
