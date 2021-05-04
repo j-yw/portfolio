@@ -68,30 +68,66 @@ footer {
 }
 
 .card {
-  box-shadow: 0px 15px 25px -4px rgba(30, 30, 60, 0.25);
-  padding: 18px;
-  margin-left: auto;
-  margin-right: auto;
+  background: white;
+  text-decoration: none;
+  color: #444;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   margin-bottom: 24px;
+  position: relative;
+  top: 0;
 }
 
 .card:hover {
   cursor: pointer;
-  transition: transform 0.2s;
-  transform: scale(1.01);
+  transition: transform 0.1s;
+  transform: scale(1.004);
 }
 
-.card img {
-  max-width: 240px;
-  margin-left: auto;
-  margin-right: auto;
+article {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.img {
-  width: fit-content;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
+h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+p {
+  flex: 1;
+  line-height: 1.4;
+}
+
+span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 2em 0 0 0;
+}
+
+.thumb {
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: center top;
+}
+
+.img-1 {
+  background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110564/Images/www.netflix.com_browse_4_smljpl.png);
+}
+.img-2 {
+  background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110243/Images/todoist.com_app__a7jrrg.png);
+}
+.img-3 {
+  background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110627/Images/headlines-from-google-33189e.netlify.app__g78jlw.png);
 }
 
 .card h3 {
