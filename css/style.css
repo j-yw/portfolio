@@ -12,58 +12,44 @@ h3 {
 
 header {
   width: fit-content;
-  padding: 12px 0;
+  padding: 24px 32px;
   margin-left: auto;
   margin-right: auto;
 }
 
 main {
-  max-width: 600px;
-  padding: 32px;
+  max-width: 720px;
+  padding: 0 32px 32px 32px;
   margin-left: auto;
   margin-right: auto;
 }
 
 main h3 {
   line-height: 1.4;
+  padding-bottom: 8px;
 }
 
-.card {
-  width: 480px;
-  border: 1px solid black;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 24px;
-}
-
-.card img {
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.img {
+form {
   width: fit-content;
-  position: relative;
-  padding: 24px;
+  color: purple;
   margin-left: auto;
   margin-right: auto;
 }
 
-.card h3 {
-  text-align: center;
-  padding-bottom: 12px;
+input {
+  display: block;
 }
 
-.projects {
-  padding: 32px 16px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid red;
+input[type="text"],
+input[type="email"] {
+  width: 360px;
+  padding: 12px 20px;
+  margin: 16px 0;
+  box-sizing: border-box;
 }
 
 textarea {
-  width: 300px;
+  width: 360px;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -73,10 +59,56 @@ textarea {
   resize: none;
 }
 
-input[type="text"],
-input[type="email"] {
-  width: 300px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
+footer {
+  width: fit-content;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  width: fit-content;
+  border: 1px solid black;
+  padding: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img {
+  width: fit-content;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card h3 {
+  text-align: center;
+  padding: 12px 0;
+}
+
+.projects {
+  max-width: 720px;
+  padding: 0 32px 32px 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects h2 {
+  padding-bottom: 16px;
+}
+
+.btn {
+  padding: 12px 24px;
+  margin-top: 12px;
 }
