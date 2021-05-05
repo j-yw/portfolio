@@ -117,6 +117,7 @@ input[type="email"] {
   margin: 16px 0;
   border-radius: 4px;
   box-sizing: border-box;
+  border: 2px solid #ccc;
 }
 
 textarea {
@@ -124,9 +125,8 @@ textarea {
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid #ccc;
   border-radius: 4px;
-  background-color: #f8f8f8;
+  border: 2px solid #ccc;
   resize: none;
 }
 
@@ -135,6 +135,17 @@ textarea {
   padding: 12px 24px;
   margin-top: 12px;
   border-radius: 4px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+.btn:active {
+  background-color: #fff;
 }
 
 footer {

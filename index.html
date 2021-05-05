@@ -5,11 +5,7 @@
     <title>j-yw dev portfolio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-    <link rel="manifest" href="site.webmanifest" />
+    <link rel="shortcut icon" href="/favicon.ico" / >
     <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/normalize.css" />
@@ -23,6 +19,20 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
     ></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-1KF7H51BBM"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-1KF7H51BBM");
+    </script>
   </head>
 
   <body>
@@ -114,25 +124,6 @@
     <footer>
       <h1>Thank you! 👏🏼</h1>
     </footer>
-
-    <!-- I am a divider -->
     <script src="js/script.js"></script>
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
