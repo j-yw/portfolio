@@ -18,7 +18,8 @@ header {
   margin-right: auto;
 }
 
-main {
+main,
+section {
   max-width: 700px;
   padding: 0 32px 32px 32px;
   margin-left: auto;
@@ -28,43 +29,6 @@ main {
 main h3 {
   line-height: 1.4;
   padding-bottom: 8px;
-}
-
-form {
-  width: fit-content;
-  color: purple;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input {
-  display: block;
-}
-
-input[type="text"],
-input[type="email"] {
-  width: 350px;
-  padding: 12px 20px;
-  margin: 16px 0;
-  box-sizing: border-box;
-}
-
-textarea {
-  width: 350px;
-  height: 150px;
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  resize: none;
-}
-
-footer {
-  width: fit-content;
-  padding: 64px 0;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .card {
@@ -78,12 +42,20 @@ footer {
   margin-bottom: 24px;
   position: relative;
   top: 0;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .card:hover {
   cursor: pointer;
   transition: transform 0.1s;
   transform: scale(1.004);
+}
+
+.thumb {
+  padding-bottom: 50%;
+  background-size: cover;
+  background-position: center top;
 }
 
 article {
@@ -114,12 +86,6 @@ span {
   margin: 2em 0 0 0;
 }
 
-.thumb {
-  padding-bottom: 50%;
-  background-size: cover;
-  background-position: center top;
-}
-
 .img-1 {
   background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110564/Images/www.netflix.com_browse_4_smljpl.png);
 }
@@ -128,11 +94,6 @@ span {
 }
 .img-3 {
   background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110627/Images/headlines-from-google-33189e.netlify.app__g78jlw.png);
-}
-
-.card h3 {
-  text-align: center;
-  padding: 12px 0;
 }
 
 .projects {
@@ -145,9 +106,40 @@ span {
 .projects h2 {
   padding-bottom: 16px;
 }
+input {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 16px 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
 
 .btn {
-  width: 350px;
+  width: 100%;
   padding: 12px 24px;
   margin-top: 12px;
+  border-radius: 4px;
+}
+
+footer {
+  width: fit-content;
+  padding: 64px 0;
+  margin-left: auto;
+  margin-right: auto;
 }
