@@ -12,10 +12,10 @@ window.onload = function () {
       // these IDs from the previous steps
       emailjs.sendForm("service_uh0wqxv", "contact_form", this).then(
         function () {
-          alert("Thank you for contacting me, I'll get back to you soon");
+          swal("Message Sent", "I'll get back to you soon");
         },
         function (error) {
-          alear("Something went wrong, please try again...", error);
+          swal("Something went wrong", "Please try again");
         }
       );
     });

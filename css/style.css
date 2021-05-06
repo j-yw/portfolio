@@ -148,6 +148,18 @@ textarea {
   background-color: #fff;
 }
 
+.swal-button {
+  color: black;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+}
+
+.swal-button:not([disabled]):hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
 footer {
   width: fit-content;
   padding: 64px 0;
