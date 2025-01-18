@@ -1,0 +1,235 @@
+/* Global variables. */
+:root {
+	/* Set sans-serif & mono fonts */
+	--sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+		"Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+		"Helvetica Neue", sans-serif;
+	--mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono",
+		monospace;
+	--standard-border-radius: 5px;
+
+	/* Default (light) theme */
+	--bg: #fff;
+	--accent-bg: #f5f7ff;
+	--text: #212121;
+	--text-light: #585858;
+	--border: #898ea4;
+	--accent: #0d47a1;
+	--accent-hover: #1266e2;
+	--accent-text: var(--bg);
+	--code: #d81b60;
+	--preformatted: #444;
+	--marked: #ffdd33;
+	--disabled: #efefef;
+}
+
+html,
+body {
+	font-family: var(--sans-font);
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	color: black;
+}
+
+header {
+	width: fit-content;
+	padding: 60px 32px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main {
+	max-width: 1000px;
+}
+
+main,
+section {
+	padding: 0 32px 32px 32px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main h2 {
+	line-height: 1.4;
+	padding-bottom: 8px;
+	font-size: 26px;
+}
+
+main h3 {
+	line-height: 1.4;
+	padding-bottom: 8px;
+	font-size: 16px;
+}
+
+.tech {
+	margin: 0;
+	padding: 0 4px 0 0;
+	font-size: 18px;
+	color: royalblue;
+	display: inline-block;
+	padding-bottom: 8px;
+}
+
+.card {
+	width: 100%;
+	background: white;
+	text-decoration: none;
+	color: #444;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	margin-bottom: 24px;
+	position: relative;
+	top: 0;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.card:hover {
+	transition: transform 0.1s;
+	transform: scale(1.004);
+}
+
+.thumb {
+	padding-bottom: 50%;
+	background-size: cover;
+	background-position: center top;
+}
+
+article {
+	padding: 20px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+h1 {
+	font-size: 32px;
+	margin: 0;
+	color: #333;
+}
+
+p {
+	flex: 1;
+	line-height: 1.4;
+}
+
+span {
+	font-size: 12px;
+	font-weight: bold;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	margin: 24px 0 0 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.img-1 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110564/Images/www.netflix.com_browse_4_smljpl.png);
+}
+.img-2 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110243/Images/todoist.com_app__a7jrrg.png);
+}
+.img-3 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1620110627/Images/headlines-from-google-33189e.netlify.app__g78jlw.png);
+}
+.img-4 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1623401294/Images/stupefied-minsky-3107cd.netlify.app__2_c3u3o8.png);
+}
+
+.img-5 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1630899976/Images/steep.surf__3_g76h6o.png);
+}
+
+.img-6 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1668994676/Images/www.coinvise.co_dashboard_tab_widgets_rplwqv.png);
+}
+
+.img-7 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1672927294/satoru%20labs/DESK/DESK-1_min_wyhset.png);
+}
+
+.img-8 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1697741879/Images/Screenshot_2023-10-19_at_11.53.01_hwqejd.png);
+}
+
+.img-9 {
+	background-image: url(https://res.cloudinary.com/dbu9adwer/image/upload/v1730788675/Images/cosmology.zone__1_isbvfb.png);
+}
+.projects {
+	padding: 0;
+}
+
+.projects h2 {
+	padding-bottom: 16px;
+}
+input {
+	display: block;
+}
+
+input[type="text"],
+input[type="email"] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 16px 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 2px solid #ccc;
+	resize: none;
+}
+
+.btn {
+	width: 100%;
+	padding: 12px 24px;
+	margin-top: 12px;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+}
+
+.btn:hover {
+	cursor: pointer;
+	background-color: #f8f8f8;
+}
+
+.btn:active {
+	background-color: #fff;
+}
+
+.swal-button {
+	color: black;
+	border-radius: 4px;
+	background-color: #fff;
+	border: 2px solid #ccc;
+}
+
+.swal-button:not([disabled]):hover {
+	cursor: pointer;
+	background-color: #f8f8f8;
+}
+
+footer {
+	width: fit-content;
+	padding: 64px 0;
+	margin-left: auto;
+	margin-right: auto;
+}
